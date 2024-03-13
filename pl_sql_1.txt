@@ -1,0 +1,12 @@
+01) Write a simple PL/SQL program  to calculate the perimeter of a circle with radius=5 cm (Note: Take pi value as 3.14)
+
+DECLARE
+    radius NUMBER := 5;
+    pi CONSTANT NUMBER := 3.14;
+    perimeter NUMBER;
+BEGIN
+    perimeter := 2 * pi * radius;
+    
+    DBMS_OUTPUT.PUT_LINE('The perimeter of the circle with radius ' || radius || ' cm is: ' || perimeter || ' cm');
+END;
+
