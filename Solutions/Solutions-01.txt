@@ -1,0 +1,9 @@
+DECLARE
+    radius NUMBER := 5;
+    pi CONSTANT NUMBER := 3.14;
+    perimeter NUMBER;
+BEGIN
+    perimeter := 2 * pi * radius;
+    
+    DBMS_OUTPUT.PUT_LINE('The perimeter of the circle with radius ' || radius || ' cm is: ' || perimeter || ' cm');
+END;
